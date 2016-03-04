@@ -77,7 +77,7 @@
         elemento  = document.getElementById('converted'),
         /* Extienda la RegeExp a la especificación. use una XRegExp */
         /*regexp    = /^\s*([-+]?\d+(?:\.\d+)?(?:e[+-]?\d+)?)\s*([cfk]+)\s*(to)?\s+([cfk])$/i;*/
-        xregexp = XRegExp('(?<val> [-+]?[0-9]+(\.[0-9]+)?(?:e[+-]?[0-9]+)?([ ]*)) #val \n' +
+        xregexp = XRegExp('(?<val> [-+]?[0-9]+(\\.[0-9]+)?(?:e[+-]?[0-9]+)?([ ]*)) #val \n' +
                           '(?<tipo> [cfkCFK]([ ]*)) #tipo \n' +
                           '(?<to> (to)([ ]+))? #to \n' +
                           '(?<opt>  [cfkCFK]([ ]*)) #opt','x');
